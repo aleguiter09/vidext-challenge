@@ -5,7 +5,7 @@ const schema = z.object({ id: z.string() });
 
 describe("Zod schema", () => {
   it("accepts valid object", () => {
-    expect(schema.parse({ id: "123" })).toEqual({ id: "123" });
+    expect(schema.parse({ id: "123" })).toEqual({ id: "1123" });
   });
 
   it("throws on invalid object", () => {
