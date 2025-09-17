@@ -20,7 +20,6 @@
   },
   "dependencies": {
     "@tanstack/react-query": "^5.89.0",
-    "@tldraw/tldraw": "^3.15.4",
     "@trpc/client": "^11.5.1",
     "@trpc/next": "^11.5.1",
     "@trpc/react-query": "^11.5.1",
