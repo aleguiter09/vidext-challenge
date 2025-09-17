@@ -1,0 +1,37 @@
+{
+  "123": {
+    "id": 123,
+    "title": "Demo document",
+    "snapshot": {
+      "document": {
+        "shapes": {
+          "shape1": {
+            "id": "shape1",
+            "type": "geo",
+            "x": 100,
+            "y": 100,
+            "props": {
+              "geo": "rectangle",
+              "color": "blue"
+            }
+          },
+          "shape2": {
+            "id": "shape2",
+            "type": "text",
+            "x": 300,
+            "y": 200,
+            "props": {
+              "text": "Hola mundo",
+              "color": "black"
+            }
+          }
+        }
+      },
+      "session": {
+        "selectedShapeIds": ["shape1"]
+      }
+    },
+    "createdAt": "2025-09-17T10:00:00.000Z",
+    "updatedAt": "2025-09-17T10:15:00.000Z"
+  }
+}
