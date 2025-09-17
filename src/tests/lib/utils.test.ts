@@ -11,4 +11,8 @@ describe("Zod schema", () => {
   it("throws on invalid object", () => {
     expect(() => schema.parse({})).toThrow();
   });
+
+  it("throws on wrong type", () => {
+    expect(() => schema.parse("not an object")).toThrow();
+  });
 });
