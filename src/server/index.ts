@@ -1,7 +1,6 @@
 import { publicProcedure, router } from "./trpc";
 import { DocumentInputSchema } from "@/schemas/document";
 import { deleteDocument, getAll, getDocument, saveDocument } from "./fileStore";
-import z from "zod";
 
 export const appRouter = router({
   getDocument: publicProcedure
