@@ -44,10 +44,12 @@ http://localhost:3000
 To run the project locally and use the AI tool you need an OpenAI API key.
 
 1. Copy the `.env.example` file to `.env.local`:
+
    ```bash
    cp .env.example .env.local
    ```
-2. Replace your_api_key_here with your own key from the OpenAI Dashboard
+
+2. Replace `your_api_key_here` with your own key from the OpenAI Dashboard
 
 Note: The API key is required only for the AI feature (Suggest Title).
 
@@ -65,6 +67,7 @@ You can test the API in two different ways:
   - Opening a document triggers `getDocument`.
   - Saving changes calls `saveDocument`.
   - Deleting calls `deleteDocument`.
+  - Pressing 'Suggest title' button `suggestTitle`
 
 This is the easiest way to validate all API calls.
 
