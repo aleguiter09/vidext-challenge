@@ -1,9 +1,10 @@
+import { type TLEditorSnapshot } from "tldraw";
 import { z } from "zod";
 
 export const DocumentSchema = z.object({
-  id: z.number(),
+  id: z.string(),
   title: z.string().optional(),
-  snapshot: z.unknown(),
+  snapshot: z.custom<TLEditorSnapshot>().optional(),
   createdAt: z.date().default(() => new Date()),
   updatedAt: z.date().default(() => new Date()),
 });
@@ -11,6 +12,6 @@ export const DocumentSchema = z.object({
 export type Document = z.infer<typeof DocumentSchema>;
 
 export const DocumentInputSchema = z.object({
-  id: z.number(),
-  snapshot: z.unknown(),
+  id: z.string(),
+  snapshot: z.custom<TLEditorSnapshot>().optional(),
 });

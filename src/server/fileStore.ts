@@ -1,4 +1,5 @@
 import { Document, DocumentSchema } from "@/schemas/document";
+import { TLEditorSnapshot } from "tldraw";
 import fs from "fs";
 import path from "path";
 
@@ -18,12 +19,17 @@ function writeDocuments(docs: Record<string, Document>) {
   fs.writeFileSync(filePath, JSON.stringify(docs, null, 2));
 }
 
-export function getDocument(id: number): Document | null {
+export function getDocument(id: string): Document | null {
   const docs = readDocuments();
   return docs[id] ?? null;
 }
 
-export function saveDocument(id: number, snapshot: unknown): Document {
+export function getAll(): Document[] {
+  const docs = readDocuments();
+  return docs ? Object.values(docs) : [];
+}
+
+export function saveDocument(id: string, snapshot: TLEditorSnapshot): Document {
   const docs = readDocuments();
   const now = new Date();
   const existing = docs[id];
