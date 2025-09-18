@@ -24,6 +24,16 @@ export function Toolbar({
     onError: () => toast.error("Failed to save changes"),
   });
 
+  const suggestTitleMutation = trpc.suggestTitle.useMutation({
+    onSuccess: (data) => {
+      setTitle(data.title);
+      toast.success(`AI suggested: ${data.title}`);
+    },
+    onError: () => {
+      toast.error("Failed to fetch AI suggestion");
+    },
+  });
+
   const handleSave = () => {
     const parsed = TitleSchema.safeParse(title);
     if (!parsed.success) {
@@ -39,6 +49,12 @@ export function Toolbar({
     saveMutation.mutate({ id, snapshot, title });
   };
 
+  const handleSuggest = () => {
+    if (!editor) return;
+    const snapshot = getSnapshot(editor.store);
+    suggestTitleMutation.mutate({ snapshot });
+  };
+
   return (
     <div className="absolute top-4 left-1/2 -translate-x-1/2 flex gap-2 bg-white/80 backdrop-blur-sm shadow-md rounded-xl px-4 py-2 z-50">
       <Input
@@ -52,6 +68,14 @@ export function Toolbar({
         className="px-3 py-1 rounded bg-vidext-500 text-primary hover:bg-vidext-500/70 cursor-pointer"
       >
         Save
+      </Button>
+      <Button
+        onClick={handleSuggest}
+        variant={"outline"}
+        className="px-2.5 rounded cursor-pointer"
+        disabled={suggestTitleMutation.isPending}
+      >
+        ✨ Suggest Title
       </Button>
     </div>
   );
