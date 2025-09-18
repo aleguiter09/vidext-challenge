@@ -7,8 +7,6 @@ Simple **tldraw** editor
 Project deployed on **Vercel**:  
 👉 [https://vidext-challenge-ag.vercel.app/](https://vidext-challenge-ag.vercel.app/)
 
----
-
 ## 🛠️ Technologies Used
 
 - [Next.js 14 (App Router)](https://nextjs.org/)
@@ -19,8 +17,6 @@ Project deployed on **Vercel**:
 - [tldraw](https://tldraw.dev/)
 - [Vercel](https://vercel.com/)
 - Simple persistence simulated with `fileStore` (local JSON).
-
----
 
 ## ⚙️ Local setup
 
@@ -38,10 +34,6 @@ npm run dev
 # 4. Open in your browser
 http://localhost:3000
 ```
-
----
-
-## 🧪 Test the API
 
 ## 🧪 Testing the API
 
@@ -66,9 +58,9 @@ This is the easiest way to validate all API calls.
 
 - **Get all documents**
 
-  ```bash
-  curl "http://localhost:3000/api/trpc/getAll"
-  ```
+```bash
+   curl "http://localhost:3000/api/trpc/getAll"
+```
 
 - **Save a document**
 
@@ -86,16 +78,12 @@ This is the easiest way to validate all API calls.
   -d '{"0":{"json":{"id":"123"}}}'
 ```
 
----
-
 ## 🧪 Tests & CI/CD
 
 - ✅ **Testing**: unit tests are implemented with **Vitest**.
 - 🔒 **Branch protection**: `master` branch is protected to only allow changes through pull requests.
 - 🐶 **Husky + lint-staged**: runs linters and tests before each commit & push to keep code quality.
 - ⚙️ **GitHub Actions**: CI pipeline that runs the test suite on every pull request.
-
----
 
 ## 🚧 Improvements for the future
 
