@@ -1,6 +1,13 @@
+import { createOpenAI } from "@ai-sdk/openai";
+import { generateText } from "ai";
 import { publicProcedure, router } from "./trpc";
-import { DocumentInputSchema } from "@/schemas/document";
+import { DocumentInputSchema, DocumentSchema } from "@/schemas/document";
 import { deleteDocument, getAll, getDocument, saveDocument } from "./fileStore";
+import z from "zod";
+
+const openai = createOpenAI({
+  apiKey: process.env.OPENAI_API_KEY,
+});
 
 export const appRouter = router({
   getDocument: publicProcedure
@@ -28,6 +35,26 @@ export const appRouter = router({
     .input(DocumentInputSchema.pick({ id: true }))
     .mutation(async ({ input }) => {
       deleteDocument(input.id);
+    }),
+
+  suggestTitle: publicProcedure
+    .input(DocumentSchema.pick({ snapshot: true }))
+    .mutation(async ({ input }) => {
+      try {
+        const snapshotText = JSON.stringify(input.snapshot).slice(0, 500);
+
+        const { text } = await generateText({
+          model: openai("gpt-4o-mini"),
+          prompt: `Suggest a short, descriptive title for this canvas: ${snapshotText}`,
+        });
+
+        return {
+          title: text.trim(),
+        };
+      } catch (e) {
+        console.error(e);
+        return { title: "Untitled Document (AI unavailable)" };
+      }
     }),
 });
 

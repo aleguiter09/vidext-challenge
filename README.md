@@ -7,6 +7,10 @@ featuring document management (create, save, delete) and an interactive editor b
 
 Project deployed on **Vercel**: [https://vidext-challenge-ag.vercel.app/](https://vidext-challenge-ag.vercel.app/)
 
+> **Note:** The deployed version includes my personal OpenAI API key to enable the **AI Suggest Title** feature.  
+> This key has limited credits and may stop working after a few attempts.  
+> Locally, you can still test this feature by setting your own `OPENAI_API_KEY` in `.env.local`.
+
 ## 🛠️ Technologies Used
 
 - [Next.js](https://nextjs.org/)
@@ -34,6 +38,18 @@ npm run dev
 # 4. Open in your browser
 http://localhost:3000
 ```
+
+## 🔑 Environment Variables
+
+To run the project locally and use the AI tool you need an OpenAI API key.
+
+1. Copy the `.env.example` file to `.env.local`:
+   ```bash
+   cp .env.example .env.local
+   ```
+2. Replace your_api_key_here with your own key from the OpenAI Dashboard
+
+Note: The API key is required only for the AI feature (Suggest Title).
 
 ## 🧪 Testing the API
 
@@ -77,6 +93,14 @@ This is the easiest way to validate all API calls.
   -H "Content-Type: application/json" \
   -d '{"0":{"json":{"id":"123"}}}'
 ```
+
+### 🤖 AI Feature
+
+Integrated with OpenAI API (via `openai` SDK) to suggest document titles based on the canvas snapshot.
+
+- Click **"✨ Suggest Title"** in the editor toolbar.
+- The current canvas snapshot is sent to `gpt-4o-mini`.
+- The model returns a short, descriptive title suggestion.
 
 ## 🧪 Tests & CI/CD
 
