@@ -43,6 +43,49 @@ http://localhost:3000
 
 ## 🧪 Test the API
 
+## 🧪 Testing the API
+
+The backend is built with **tRPC**, which exposes procedures under `/api/trpc/*`.
+
+You can test the API in two different ways:
+
+### 1. Through the UI (recommended)
+
+- Open the app at [http://localhost:3000](http://localhost:3000).
+- Use the **sidebar** and **editor**:
+  - Sidebar lists documents (`getAll`).
+  - Opening a document triggers `getDocument`.
+  - Saving changes calls `saveDocument`.
+  - Deleting calls `deleteDocument`.
+
+This is the easiest way to validate all API calls.
+
+### 2. Using curl / Postman
+
+#### Queries (GET/POST)
+
+- **Get all documents**
+
+  ```bash
+  curl "http://localhost:3000/api/trpc/getAll"
+  ```
+
+- **Save a document**
+
+```bash
+  curl -X POST http://localhost:3000/api/trpc/saveDocument?batch=1 \
+  -H "Content-Type: application/json" \
+  -d '{"0":{"json":{"id":"123","title":"Demo","snapshot":{}}}}'
+```
+
+- **Delete a document**
+
+```bash
+  curl -X POST http://localhost:3000/api/trpc/deleteDocument?batch=1 \
+  -H "Content-Type: application/json" \
+  -d '{"0":{"json":{"id":"123"}}}'
+```
+
 ---
 
 ## 🧪 Tests & CI/CD
