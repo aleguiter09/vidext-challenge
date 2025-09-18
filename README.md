@@ -80,10 +80,10 @@ This is the easiest way to validate all API calls.
 
 ## 🧪 Tests & CI/CD
 
-- ✅ **Testing**: unit tests are implemented with **Vitest**.
-- 🔒 **Branch protection**: `master` branch is protected to only allow changes through pull requests.
-- 🐶 **Husky + lint-staged**: runs linters and tests before each commit & push to keep code quality.
-- ⚙️ **GitHub Actions**: CI pipeline that runs the test suite on every pull request.
+- **Testing**: unit tests are implemented with **Vitest**.
+- **Branch protection**: `master` branch is protected to only allow changes through pull requests.
+- **Husky + lint-staged**: runs linters and tests before each commit & push to keep code quality.
+- **GitHub Actions**: CI pipeline that runs the test suite on every pull request.
 
 ## 🚧 Improvements for the future
 
