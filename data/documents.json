@@ -1,37 +1,199 @@
 {
-  "123": {
-    "id": 123,
-    "title": "Demo document",
+  "11c47432-01a8-4779-bac8-a27c6f88aa8e": {
+    "id": "11c47432-01a8-4779-bac8-a27c6f88aa8e",
+    "title": "Texto 123",
     "snapshot": {
       "document": {
-        "shapes": {
-          "shape1": {
-            "id": "shape1",
-            "type": "geo",
-            "x": 100,
-            "y": 100,
-            "props": {
-              "geo": "rectangle",
-              "color": "blue"
-            }
+        "store": {
+          "document:document": {
+            "gridSize": 10,
+            "name": "",
+            "meta": {},
+            "id": "document:document",
+            "typeName": "document"
           },
-          "shape2": {
-            "id": "shape2",
+          "page:page": {
+            "meta": {},
+            "id": "page:page",
+            "name": "Page 1",
+            "index": "a1",
+            "typeName": "page"
+          },
+          "shape:1_yEKfuM7J3McBfoNH9Ms": {
+            "x": 248,
+            "y": 213.20000839233398,
+            "rotation": 0,
+            "isLocked": false,
+            "opacity": 1,
+            "meta": {},
+            "id": "shape:1_yEKfuM7J3McBfoNH9Ms",
             "type": "text",
-            "x": 300,
-            "y": 200,
             "props": {
-              "text": "Hola mundo",
-              "color": "black"
-            }
+              "color": "black",
+              "size": "m",
+              "w": 671.2000732421875,
+              "font": "draw",
+              "textAlign": "start",
+              "autoSize": false,
+              "scale": 1,
+              "richText": {
+                "type": "doc",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "dir": "auto"
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Texto numero 3"
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            "parentId": "page:page",
+            "index": "a1",
+            "typeName": "shape"
+          }
+        },
+        "schema": {
+          "schemaVersion": 2,
+          "sequences": {
+            "com.tldraw.store": 4,
+            "com.tldraw.asset": 1,
+            "com.tldraw.camera": 1,
+            "com.tldraw.document": 2,
+            "com.tldraw.instance": 25,
+            "com.tldraw.instance_page_state": 5,
+            "com.tldraw.page": 1,
+            "com.tldraw.instance_presence": 6,
+            "com.tldraw.pointer": 1,
+            "com.tldraw.shape": 4,
+            "com.tldraw.asset.bookmark": 2,
+            "com.tldraw.asset.image": 5,
+            "com.tldraw.asset.video": 5,
+            "com.tldraw.shape.group": 0,
+            "com.tldraw.shape.text": 3,
+            "com.tldraw.shape.bookmark": 2,
+            "com.tldraw.shape.draw": 2,
+            "com.tldraw.shape.geo": 10,
+            "com.tldraw.shape.note": 9,
+            "com.tldraw.shape.line": 5,
+            "com.tldraw.shape.frame": 1,
+            "com.tldraw.shape.arrow": 6,
+            "com.tldraw.shape.highlight": 1,
+            "com.tldraw.shape.embed": 4,
+            "com.tldraw.shape.image": 5,
+            "com.tldraw.shape.video": 4,
+            "com.tldraw.binding.arrow": 1
           }
         }
       },
       "session": {
-        "selectedShapeIds": ["shape1"]
+        "version": 0,
+        "currentPageId": "page:page",
+        "exportBackground": true,
+        "isFocusMode": false,
+        "isDebugMode": false,
+        "isToolLocked": false,
+        "isGridMode": false,
+        "pageStates": [
+          {
+            "pageId": "page:page",
+            "camera": {
+              "x": 0,
+              "y": 0,
+              "z": 1
+            },
+            "selectedShapeIds": [],
+            "focusedGroupId": null
+          }
+        ]
       }
     },
-    "createdAt": "2025-09-17T10:00:00.000Z",
-    "updatedAt": "2025-09-17T10:15:00.000Z"
+    "createdAt": "2025-09-18T18:46:07.450Z",
+    "updatedAt": "2025-09-18T18:46:16.919Z"
+  },
+  "1bd9ab5d-80a0-4903-9865-7b0d0e52df01": {
+    "id": "1bd9ab5d-80a0-4903-9865-7b0d0e52df01",
+    "title": "Texto numero 4",
+    "snapshot": {
+      "document": {
+        "store": {
+          "document:document": {
+            "gridSize": 10,
+            "name": "",
+            "meta": {},
+            "id": "document:document",
+            "typeName": "document"
+          },
+          "page:page": {
+            "meta": {},
+            "id": "page:page",
+            "name": "Page 1",
+            "index": "a1",
+            "typeName": "page"
+          }
+        },
+        "schema": {
+          "schemaVersion": 2,
+          "sequences": {
+            "com.tldraw.store": 4,
+            "com.tldraw.asset": 1,
+            "com.tldraw.camera": 1,
+            "com.tldraw.document": 2,
+            "com.tldraw.instance": 25,
+            "com.tldraw.instance_page_state": 5,
+            "com.tldraw.page": 1,
+            "com.tldraw.instance_presence": 6,
+            "com.tldraw.pointer": 1,
+            "com.tldraw.shape": 4,
+            "com.tldraw.asset.bookmark": 2,
+            "com.tldraw.asset.image": 5,
+            "com.tldraw.asset.video": 5,
+            "com.tldraw.shape.group": 0,
+            "com.tldraw.shape.text": 3,
+            "com.tldraw.shape.bookmark": 2,
+            "com.tldraw.shape.draw": 2,
+            "com.tldraw.shape.geo": 10,
+            "com.tldraw.shape.note": 9,
+            "com.tldraw.shape.line": 5,
+            "com.tldraw.shape.frame": 1,
+            "com.tldraw.shape.arrow": 6,
+            "com.tldraw.shape.highlight": 1,
+            "com.tldraw.shape.embed": 4,
+            "com.tldraw.shape.image": 5,
+            "com.tldraw.shape.video": 4,
+            "com.tldraw.binding.arrow": 1
+          }
+        }
+      },
+      "session": {
+        "version": 0,
+        "currentPageId": "page:page",
+        "exportBackground": true,
+        "isFocusMode": false,
+        "isDebugMode": false,
+        "isToolLocked": false,
+        "isGridMode": false,
+        "pageStates": [
+          {
+            "pageId": "page:page",
+            "camera": {
+              "x": 0,
+              "y": 0,
+              "z": 1
+            },
+            "selectedShapeIds": [],
+            "focusedGroupId": null
+          }
+        ]
+      }
+    },
+    "createdAt": "2025-09-18T18:49:04.536Z",
+    "updatedAt": "2025-09-18T18:49:04.536Z"
   }
 }

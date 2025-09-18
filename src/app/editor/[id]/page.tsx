@@ -1,4 +1,5 @@
-import { EditorClient } from "@/components/EditorClient";
+import { Canva } from "@/components/Canva";
+import { serverClient } from "@/server/serverClient";
 
 export default async function EditorPage({
   params,
@@ -6,7 +7,7 @@ export default async function EditorPage({
   params: { id: string };
 }>) {
   const { id } = await params;
-  const parsedId = parseInt(id ?? "0", 10);
+  const data = await serverClient.getDocument({ id });
 
-  return <EditorClient id={parsedId} />;
+  return <Canva id={id} snapshot={data.snapshot} title={data.title} />;
 }
