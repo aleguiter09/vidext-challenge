@@ -1,7 +1,7 @@
 {
   "11c47432-01a8-4779-bac8-a27c6f88aa8e": {
     "id": "11c47432-01a8-4779-bac8-a27c6f88aa8e",
-    "title": "Texto 123",
+    "title": "Canva 1",
     "snapshot": {
       "document": {
         "store": {
@@ -32,7 +32,7 @@
               "color": "black",
               "size": "m",
               "w": 671.2000732421875,
-              "font": "draw",
+              "font": "mono",
               "textAlign": "start",
               "autoSize": false,
               "scale": 1,
@@ -47,12 +47,132 @@
                     "content": [
                       {
                         "type": "text",
-                        "text": "Texto numero 3"
+                        "text": "First Canva"
                       }
                     ]
                   }
                 ]
               }
+            },
+            "parentId": "page:page",
+            "index": "a1",
+            "typeName": "shape"
+          }
+        },
+        "schema": {
+          "schemaVersion": 2,
+          "sequences": {
+            "com.tldraw.store": 4,
+            "com.tldraw.asset": 1,
+            "com.tldraw.camera": 1,
+            "com.tldraw.document": 2,
+            "com.tldraw.instance": 25,
+            "com.tldraw.instance_page_state": 5,
+            "com.tldraw.page": 1,
+            "com.tldraw.instance_presence": 6,
+            "com.tldraw.pointer": 1,
+            "com.tldraw.shape": 4,
+            "com.tldraw.asset.bookmark": 2,
+            "com.tldraw.asset.image": 5,
+            "com.tldraw.asset.video": 5,
+            "com.tldraw.shape.group": 0,
+            "com.tldraw.shape.text": 3,
+            "com.tldraw.shape.bookmark": 2,
+            "com.tldraw.shape.draw": 2,
+            "com.tldraw.shape.geo": 10,
+            "com.tldraw.shape.note": 9,
+            "com.tldraw.shape.line": 5,
+            "com.tldraw.shape.frame": 1,
+            "com.tldraw.shape.arrow": 6,
+            "com.tldraw.shape.highlight": 1,
+            "com.tldraw.shape.embed": 4,
+            "com.tldraw.shape.image": 5,
+            "com.tldraw.shape.video": 4,
+            "com.tldraw.binding.arrow": 1
+          }
+        }
+      },
+      "session": {
+        "version": 0,
+        "currentPageId": "page:page",
+        "exportBackground": true,
+        "isFocusMode": false,
+        "isDebugMode": false,
+        "isToolLocked": false,
+        "isGridMode": false,
+        "pageStates": [
+          {
+            "pageId": "page:page",
+            "camera": {
+              "x": 114.41197957953307,
+              "y": 94.71638620608934,
+              "z": 0.7822027272951789
+            },
+            "selectedShapeIds": [
+              "shape:1_yEKfuM7J3McBfoNH9Ms"
+            ],
+            "focusedGroupId": null
+          }
+        ]
+      }
+    },
+    "createdAt": "2025-09-18T18:46:07.450Z",
+    "updatedAt": "2025-09-18T20:18:19.688Z"
+  },
+  "1bd9ab5d-80a0-4903-9865-7b0d0e52df01": {
+    "id": "1bd9ab5d-80a0-4903-9865-7b0d0e52df01",
+    "title": "Canva 2",
+    "snapshot": {
+      "document": {
+        "store": {
+          "document:document": {
+            "gridSize": 10,
+            "name": "",
+            "meta": {},
+            "id": "document:document",
+            "typeName": "document"
+          },
+          "page:page": {
+            "meta": {},
+            "id": "page:page",
+            "name": "Page 1",
+            "index": "a1",
+            "typeName": "page"
+          },
+          "asset:576200189": {
+            "id": "asset:576200189",
+            "type": "image",
+            "typeName": "asset",
+            "props": {
+              "name": "logo_header.svg",
+              "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDI3IiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDQyNyAxMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0xNTkuNDU2IDc2LjU1NTZMMTMzLjU0OCAxMC4yMzc4SDEyMi40NTlMMTUyLjg5MyA4OC4wNDA5TDE1My4yMzcgODguODg3N0gxNjUuMzMxVjg4LjU0MzdMMTY1LjY0OCA4OC42NzZMMTk2LjM0NiAxMC4yMzc4SDE4NS4yNThMMTU5LjQ1NiA3Ni41NTU2WiIgZmlsbD0iIzA1MDUwNSIvPgo8cGF0aCBkPSJNMjEzLjc1OCAzMS45NjQxSDIwMy40MTFWODguODg3NEgyMTMuNzU4VjMxLjk2NDFaIiBmaWxsPSIjMDUwNTA1Ii8+CjxwYXRoIGQ9Ik0yNjMuNjcxIDM3LjM2M0MyNTkuMjUxIDMzLjE4MTggMjUzLjQyOSAzMC44Nzk0IDI0Ny4wNzggMzAuODc5NEMyMzkuOTA2IDMwLjg3OTQgMjMzLjQ0OSAzMy44MTY5IDIyOC45MjQgMzkuMTg5QzIyNC4zNzIgNDQuNTYxMSAyMjEuOTY0IDUxLjg2NTEgMjIxLjk2NCA2MC4zMzM0QzIyMS45NjQgNjguODAxOCAyMjQuNDI1IDc2LjIzODEgMjI4Ljg5NyA4MS41ODM3QzIzMy40NDkgODcuMDA4OCAyMzkuODggODkuOTk5MiAyNDcuMDUxIDg5Ljk5OTJDMjUzLjExMiA4OS45OTkyIDI1OC45NiA4Ny40ODUxIDI2My42NDQgODIuOTA2OVY4NC4zMzZDMjYzLjY0NCA4NS4yNjIyIDI2My42NDQgODYuMTM1NSAyNjMuNjQ0IDg3LjU5MVY4OC45MTQyTDI3NC4wMTggODguOTkzNlY3OS43ODQyQzI3NC4wMTggNzcuNzczIDI3NC4wMTggNzUuNDcwNiAyNzQuMDE4IDcyLjQwMDlWMTAuMjM3OEgyNjMuNjcxVjM3LjMzNjZWMzcuMzYzWk0yNTkuNzAxIDQ1Ljg4NDNDMjYyLjI2OCA0OS4xMzkzIDI2My42NzEgNTMuNTU4OCAyNjMuNjcxIDU4LjM3NTFWNjEuOTQ3N0MyNjMuNjcxIDcyLjUzMzIgMjU3LjE4NyA4MC40OTg3IDI0OC41ODYgODAuNDk4N0MyNDMuNjY0IDgwLjQ5ODcgMjM5LjU2MiA3OC42MTk4IDIzNi43MDQgNzUuMTAwMkMyMzMuODQ2IDcxLjUyNzYgMjMyLjMxMSA2Ni40MjAxIDIzMi4zMTEgNjAuMzMzNEMyMzIuMzExIDU0LjI0NjggMjMzLjg3MyA0OS4zMjQ2IDIzNi44MzYgNDUuODA0OUMyMzkuNzIxIDQyLjM5MTEgMjQzLjc3IDQwLjU5MTYgMjQ4LjU2IDQwLjU5MTZDMjUzLjA4NSA0MC41OTE2IDI1Ni45MjIgNDIuNDE3NiAyNTkuNjc1IDQ1Ljg4NDNIMjU5LjcwMVoiIGZpbGw9IiMwNTA1MDUiLz4KPHBhdGggZD0iTTMwOS4xODkgMzAuODc5NEMzMDEuNTE1IDMwLjg3OTQgMjk0LjYwOCAzMy44MTY5IDI4OS43MzggMzkuMTg5QzI4NC44OTUgNDQuNTA4MiAyODIuMjQ5IDUxLjk5NzQgMjgyLjI0OSA2MC4zMzM0QzI4Mi4yNDkgNjguNjY5NSAyODQuOTIyIDc2LjE1ODcgMjg5LjczOCA4MS40Nzc5QzI5NC42MDggODYuODIzNSAzMDEuNTE1IDg5Ljc4NzQgMzA5LjE4OSA4OS43ODc0QzMyMS4yMyA4OS43ODc0IDMzMC43NTcgODIuNzc0NiAzMzQuMDEyIDcxLjQ3NDZMMzM0LjQzNSA3MC4wNDU2TDMyNC4zNTMgNjguMjk5TDMyNC4wMDkgNjkuNDEwNEMzMjIuOTUgNzIuODI0MyAzMjEuMTUxIDc1LjQ3MDYgMzE4LjYxIDc3LjI5NjZDMzE2LjA3IDc5LjE0OTEgMzEyLjg5NCA4MC4wNzUzIDMwOS4xODkgODAuMDc1M0MzMDQuNTA1IDgwLjA3NTMgMzAwLjUwOSA3OC40NjEgMjk3LjYyNCA3NS4zOTEyQzI5NC45NzggNzIuNTU5NiAyOTMuMzExIDY4LjUzNzEgMjkyLjgwOCA2My43MjA4SDMzNi4xMjlWNjAuMzMzNEMzMzYuMTI5IDUyLjAyMzggMzMzLjQ1NiA0NC41MDgyIDMyOC42NCAzOS4xODlDMzIzLjc3IDMzLjg0MzMgMzE2Ljg2MyAzMC44Nzk0IDMwOS4xODkgMzAuODc5NFpNMzI1LjMzMiA1NC43NzYxSDI5My4xMjZDMjkzLjg5MyA1MC42MjEzIDI5NS42MTMgNDcuMTU0NSAyOTguMTU0IDQ0LjcxOTlDMzAwLjk4NSA0Mi4wMjA2IDMwNC43OTYgNDAuNTkxNSAzMDkuMTYzIDQwLjU5MTVDMzEzLjUyOSA0MC41OTE1IDMxNy4zOTMgNDIuMDIwNiAzMjAuMjUxIDQ0LjY5MzRDMzIyLjgxOCA0Ny4xMjgxIDMyNC41NjQgNTAuNTk0OCAzMjUuMzMyIDU0Ljc3NjFaIiBmaWxsPSIjMDUwNTA1Ii8+CjxwYXRoIGQ9Ik0zODkuNjM4IDMxLjk2NDFIMzc3LjQxMkwzNjMuNTcxIDUyLjAyMzVMMzQ5LjU5OCAzMS45NjQxSDMzOS4zNTdWMzIuOTY5N0wzMzguNTYzIDMzLjUyNTVMMzU3LjY5NiA1OS42NzE1TDMzNi4zMTMgODguODg3NEgzNDguNTEzTDM2My41NzEgNjcuMzk4OUwzNzguMTI2IDg4LjMzMTdMMzc4LjUyMyA4OC44ODc0SDM5MC43MjNMMzY5LjQ0NiA1OS42NzE1TDM4OS42MzggMzEuOTY0MVoiIGZpbGw9IiMwNTA1MDUiLz4KPHBhdGggZD0iTTQyNS4zNiA3OS43ODQxQzQyMy4xNjQgODAuMzM5OSA0MjEuMDczIDgwLjYwNDUgNDE5LjE2OCA4MC42MDQ1QzQxNi42MDEgODAuNjA0NSA0MTQuODgxIDc5Ljg5IDQxMy44NzUgNzguMzgxNkM0MTMuMDU1IDc3LjEzNzggNDEyLjY1OCA3NS4zNjQ3IDQxMi42NTggNzIuNzk3N1Y0MS4wMTQ5SDQyNC44MDRWMzEuOTY0M0g0MTIuNjU4VjE3Ljk2NTFINDA0LjY2Nkw0MDIuNDk2IDMxLjk2NDNMMzkzLjUyNCAzMS45MTE0TDM5My41NzcgNDEuMjAwMkg0MDIuMzM3TDQwMi4zMSA3My4yNDc2QzQwMi4zMSA3Ni40NDk3IDQwMi45NDUgODEuMDU0NCA0MDUuOTM2IDg0LjczMjhDNDA4Ljc5NCA4OC4yMjYgNDEzLjAyOCA4OS45OTkxIDQxOC41MDYgODkuOTk5MUM0MjAuOTQxIDg5Ljk5OTEgNDIzLjQyOCA4OS43MzQ1IDQyNS45NDIgODkuMjA1Mkw0MjcuMDAxIDg4Ljk5MzVWNzkuMzg3Mkw0MjUuMzYgNzkuODEwNlY3OS43ODQxWiIgZmlsbD0iIzA1MDUwNSIvPgo8cGF0aCBkPSJNMjA4LjQ5IDkuNDcwN0MyMDUuMjM1IDkuNDcwNyAyMDIuNTg4IDEyLjExNzEgMjAyLjU4OCAxNS4zNzIxQzIwMi41ODggMTguNjI3MSAyMDUuMjM1IDIxLjI3MzUgMjA4LjQ5IDIxLjI3MzVDMjExLjc0NSAyMS4yNzM1IDIxNC4zOTEgMTguNjI3MSAyMTQuMzkxIDE1LjM3MjFDMjE0LjM5MSAxMi4xMTcxIDIxMS43NDUgOS40NzA3IDIwOC40OSA5LjQ3MDdaIiBmaWxsPSIjMDUwNTA1Ii8+CjxwYXRoIGQ9Ik0zMi45MzcxIDk3LjYwNjVMNjcuMjgzMSA3OS44ODJDNjcuOTgyMiA3OS41MzI2IDY4LjQ2IDc4LjgyMDEgNjguNDYgNzcuOTk2OEM2OC40NiA3Ny4xMjg1IDY3LjkyOTUgNzYuMzg0OCA2Ny4xNzA3IDc2LjA1OTdMMzMuMzc2MiA1OC42MTE5QzMzLjIzNTcgNTguNTM1OCAzMy4wOTE3IDU4LjQ2MzEgMzIuOTQ3NiA1OC4zOTA1SDMyLjk0MDZDMjkuODk4NCA1Ni44NjE2IDI2LjQ1MjIgNTYuMDAwMiAyMi44MDIzIDU2LjAwMDJDMTAuNDY0OCA1Ni4wMDAyIDAuNDU5OTYxIDY1Ljg0ODQgMC40NTk5NjEgNzguMDAwMkMwLjQ1OTk2MSA5MC4xNTIxIDEwLjQ2MTMgMTAwIDIyLjgwMjMgMTAwQzI2LjQ1MjIgMTAwIDI5Ljg5ODQgOTkuMTM4OSAzMi45NDA2IDk3LjYxTDMyLjkzNzEgOTcuNjA2NVoiIGZpbGw9IiMwNTA1MDUiLz4KPHBhdGggZD0iTTg4LjM4MDggMzAuNTAzM0M5OS4zODQ3IDM2LjEyNyAxMDMuNjQ4IDQ5LjQxMDQgOTcuOTA0IDYwLjE4MDZDOTIuMTU5OSA3MC45NTA3IDc4LjU4MDQgNzUuMTE4NyA2Ny41NzI5IDY5LjQ5ODVMMTIuNTM5MSA0MS40OTY3QzEuNTM1MTcgMzUuODczIC0yLjcyODE1IDIyLjU4OTYgMy4wMTU5NCAxMS44MTk0QzguNzYwMDMgMS4wNDkyNiAyMi4zMzk1IC0zLjExODc0IDMzLjM0NyAyLjUwMTU0TDg4LjM4MDggMzAuNDk5OVYzMC41MDMzWiIgZmlsbD0iIzA1MDUwNSIvPgo8L3N2Zz4K",
+              "w": 427,
+              "h": 100,
+              "fileSize": 3723,
+              "mimeType": "image/svg+xml",
+              "isAnimated": false
+            },
+            "meta": {}
+          },
+          "shape:oP6gicARcjKpK7RY96cvs": {
+            "x": 412.89996337890625,
+            "y": 196.8000030517578,
+            "rotation": 0,
+            "isLocked": false,
+            "opacity": 1,
+            "meta": {},
+            "id": "shape:oP6gicARcjKpK7RY96cvs",
+            "type": "image",
+            "props": {
+              "w": 427,
+              "h": 100,
+              "assetId": "asset:576200189",
+              "playing": true,
+              "url": "",
+              "crop": null,
+              "flipX": false,
+              "flipY": false,
+              "altText": ""
             },
             "parentId": "page:page",
             "index": "a1",
@@ -114,12 +234,133 @@
         ]
       }
     },
-    "createdAt": "2025-09-18T18:46:07.450Z",
-    "updatedAt": "2025-09-18T18:46:16.919Z"
+    "createdAt": "2025-09-18T18:49:04.536Z",
+    "updatedAt": "2025-09-18T20:18:40.383Z"
   },
-  "1bd9ab5d-80a0-4903-9865-7b0d0e52df01": {
-    "id": "1bd9ab5d-80a0-4903-9865-7b0d0e52df01",
-    "title": "Texto numero 4",
+  "bac48e43-ac4c-4828-8925-8b894fb48117": {
+    "id": "bac48e43-ac4c-4828-8925-8b894fb48117",
+    "title": "Canva 3",
+    "snapshot": {
+      "document": {
+        "store": {
+          "document:document": {
+            "gridSize": 10,
+            "name": "",
+            "meta": {},
+            "id": "document:document",
+            "typeName": "document"
+          },
+          "page:page": {
+            "meta": {},
+            "id": "page:page",
+            "name": "Page 1",
+            "index": "a1",
+            "typeName": "page"
+          },
+          "shape:PtUgoufAK4h7O3hhR3I7z": {
+            "x": 500,
+            "y": 227,
+            "rotation": 0,
+            "isLocked": false,
+            "opacity": 1,
+            "meta": {},
+            "id": "shape:PtUgoufAK4h7O3hhR3I7z",
+            "type": "note",
+            "props": {
+              "color": "black",
+              "richText": {
+                "type": "doc",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "dir": "auto"
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Note"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "size": "m",
+              "font": "draw",
+              "align": "middle",
+              "verticalAlign": "middle",
+              "labelColor": "black",
+              "growY": 0,
+              "fontSizeAdjustment": 22,
+              "url": "",
+              "scale": 1
+            },
+            "parentId": "page:page",
+            "index": "a1",
+            "typeName": "shape"
+          }
+        },
+        "schema": {
+          "schemaVersion": 2,
+          "sequences": {
+            "com.tldraw.store": 4,
+            "com.tldraw.asset": 1,
+            "com.tldraw.camera": 1,
+            "com.tldraw.document": 2,
+            "com.tldraw.instance": 25,
+            "com.tldraw.instance_page_state": 5,
+            "com.tldraw.page": 1,
+            "com.tldraw.instance_presence": 6,
+            "com.tldraw.pointer": 1,
+            "com.tldraw.shape": 4,
+            "com.tldraw.asset.bookmark": 2,
+            "com.tldraw.asset.image": 5,
+            "com.tldraw.asset.video": 5,
+            "com.tldraw.shape.group": 0,
+            "com.tldraw.shape.text": 3,
+            "com.tldraw.shape.bookmark": 2,
+            "com.tldraw.shape.draw": 2,
+            "com.tldraw.shape.geo": 10,
+            "com.tldraw.shape.note": 9,
+            "com.tldraw.shape.line": 5,
+            "com.tldraw.shape.frame": 1,
+            "com.tldraw.shape.arrow": 6,
+            "com.tldraw.shape.highlight": 1,
+            "com.tldraw.shape.embed": 4,
+            "com.tldraw.shape.image": 5,
+            "com.tldraw.shape.video": 4,
+            "com.tldraw.binding.arrow": 1
+          }
+        }
+      },
+      "session": {
+        "version": 0,
+        "currentPageId": "page:page",
+        "exportBackground": true,
+        "isFocusMode": false,
+        "isDebugMode": false,
+        "isToolLocked": false,
+        "isGridMode": false,
+        "pageStates": [
+          {
+            "pageId": "page:page",
+            "camera": {
+              "x": 0,
+              "y": 0,
+              "z": 1
+            },
+            "selectedShapeIds": [],
+            "focusedGroupId": null
+          }
+        ]
+      }
+    },
+    "createdAt": "2025-09-18T20:19:00.061Z",
+    "updatedAt": "2025-09-18T20:19:00.061Z"
+  },
+  "68c3462b-85e4-4501-9f83-0776288ff378": {
+    "id": "68c3462b-85e4-4501-9f83-0776288ff378",
+    "title": "Empty Canva",
     "snapshot": {
       "document": {
         "store": {
@@ -193,7 +434,183 @@
         ]
       }
     },
-    "createdAt": "2025-09-18T18:49:04.536Z",
-    "updatedAt": "2025-09-18T18:49:04.536Z"
+    "createdAt": "2025-09-18T20:19:08.628Z",
+    "updatedAt": "2025-09-18T20:19:08.628Z"
+  },
+  "6f27cd5e-c929-4710-9cfc-f3ae02397e57": {
+    "id": "6f27cd5e-c929-4710-9cfc-f3ae02397e57",
+    "title": "Multiple Page Canva",
+    "snapshot": {
+      "document": {
+        "store": {
+          "shape:X8hwkH4Dw7sOtS2LmaANN": {
+            "x": 396.79998779296875,
+            "y": 192.40000534057617,
+            "rotation": 0,
+            "isLocked": false,
+            "opacity": 1,
+            "meta": {},
+            "id": "shape:X8hwkH4Dw7sOtS2LmaANN",
+            "type": "text",
+            "props": {
+              "color": "black",
+              "size": "m",
+              "w": 218.39996337890625,
+              "font": "draw",
+              "textAlign": "start",
+              "autoSize": false,
+              "scale": 1,
+              "richText": {
+                "type": "doc",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "dir": "auto"
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Page 1"
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            "parentId": "page:page",
+            "index": "a1",
+            "typeName": "shape"
+          },
+          "page:page": {
+            "meta": {},
+            "id": "page:page",
+            "name": "Page 1",
+            "index": "a1",
+            "typeName": "page"
+          },
+          "document:document": {
+            "gridSize": 10,
+            "name": "",
+            "meta": {},
+            "id": "document:document",
+            "typeName": "document"
+          },
+          "shape:CtYVMXWmjOpRN9TWYS7uP": {
+            "x": 324.79998779296875,
+            "y": 209.20000839233398,
+            "rotation": 0,
+            "isLocked": false,
+            "opacity": 1,
+            "meta": {},
+            "id": "shape:CtYVMXWmjOpRN9TWYS7uP",
+            "type": "text",
+            "props": {
+              "color": "black",
+              "size": "m",
+              "w": 428.4000244140625,
+              "font": "draw",
+              "textAlign": "start",
+              "autoSize": false,
+              "scale": 1,
+              "richText": {
+                "type": "doc",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "attrs": {
+                      "dir": "auto"
+                    },
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Page 2"
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            "parentId": "page:C6ThDSuAA72f3bzKZ8SW6",
+            "index": "a1",
+            "typeName": "shape"
+          },
+          "page:C6ThDSuAA72f3bzKZ8SW6": {
+            "meta": {},
+            "id": "page:C6ThDSuAA72f3bzKZ8SW6",
+            "name": "Page 2",
+            "index": "a26pU",
+            "typeName": "page"
+          }
+        },
+        "schema": {
+          "schemaVersion": 2,
+          "sequences": {
+            "com.tldraw.store": 4,
+            "com.tldraw.asset": 1,
+            "com.tldraw.camera": 1,
+            "com.tldraw.document": 2,
+            "com.tldraw.instance": 25,
+            "com.tldraw.instance_page_state": 5,
+            "com.tldraw.page": 1,
+            "com.tldraw.instance_presence": 6,
+            "com.tldraw.pointer": 1,
+            "com.tldraw.shape": 4,
+            "com.tldraw.asset.bookmark": 2,
+            "com.tldraw.asset.image": 5,
+            "com.tldraw.asset.video": 5,
+            "com.tldraw.shape.group": 0,
+            "com.tldraw.shape.text": 3,
+            "com.tldraw.shape.bookmark": 2,
+            "com.tldraw.shape.draw": 2,
+            "com.tldraw.shape.geo": 10,
+            "com.tldraw.shape.note": 9,
+            "com.tldraw.shape.line": 5,
+            "com.tldraw.shape.frame": 1,
+            "com.tldraw.shape.arrow": 6,
+            "com.tldraw.shape.highlight": 1,
+            "com.tldraw.shape.embed": 4,
+            "com.tldraw.shape.image": 5,
+            "com.tldraw.shape.video": 4,
+            "com.tldraw.binding.arrow": 1
+          }
+        }
+      },
+      "session": {
+        "version": 0,
+        "currentPageId": "page:C6ThDSuAA72f3bzKZ8SW6",
+        "exportBackground": true,
+        "isFocusMode": false,
+        "isDebugMode": false,
+        "isToolLocked": false,
+        "isGridMode": false,
+        "pageStates": [
+          {
+            "pageId": "page:page",
+            "camera": {
+              "x": 0,
+              "y": 0,
+              "z": 1
+            },
+            "selectedShapeIds": [
+              "shape:X8hwkH4Dw7sOtS2LmaANN"
+            ],
+            "focusedGroupId": null
+          },
+          {
+            "pageId": "page:C6ThDSuAA72f3bzKZ8SW6",
+            "camera": {
+              "x": 0,
+              "y": 0,
+              "z": 1
+            },
+            "selectedShapeIds": [],
+            "focusedGroupId": null
+          }
+        ]
+      }
+    },
+    "createdAt": "2025-09-18T20:27:31.510Z",
+    "updatedAt": "2025-09-18T20:27:31.510Z"
   }
 }
