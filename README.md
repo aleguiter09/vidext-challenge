@@ -1,6 +1,7 @@
 # Vidext Challenge - Alejandro Guiter
 
-Simple **tldraw** editor
+A minimal collaborative canvas app developed for a technical challenge,  
+featuring document management (create, save, delete) and an interactive editor built with tldraw.
 
 ## 🚀 Deployment
 
@@ -9,11 +10,11 @@ Project deployed on **Vercel**:
 
 ## 🛠️ Technologies Used
 
-- [Next.js 14 (App Router)](https://nextjs.org/)
+- [Next.js](https://nextjs.org/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [tRPC](https://trpc.io/)
-- [TailwindCSS v4](https://tailwindcss.com/)
-- [shadcn/ui](https://ui.shadcn.com/)
+- [TailwindCSS](https://tailwindcss.com/)
+- [shadcn](https://ui.shadcn.com/)
 - [tldraw](https://tldraw.dev/)
 - [Vercel](https://vercel.com/)
 - Simple persistence simulated with `fileStore` (local JSON).
