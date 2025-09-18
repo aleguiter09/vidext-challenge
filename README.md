@@ -5,8 +5,7 @@ featuring document management (create, save, delete) and an interactive editor b
 
 ## 🚀 Deployment
 
-Project deployed on **Vercel**:  
-👉 [https://vidext-challenge-ag.vercel.app/](https://vidext-challenge-ag.vercel.app/)
+Project deployed on **Vercel**: [https://vidext-challenge-ag.vercel.app/](https://vidext-challenge-ag.vercel.app/)
 
 ## 🛠️ Technologies Used
 
