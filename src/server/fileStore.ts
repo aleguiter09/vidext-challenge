@@ -29,14 +29,18 @@ export function getAll(): Document[] {
   return docs ? Object.values(docs) : [];
 }
 
-export function saveDocument(id: string, snapshot: TLEditorSnapshot): Document {
+export function saveDocument(
+  id: string,
+  snapshot: TLEditorSnapshot,
+  title: string
+): Document {
   const docs = readDocuments();
   const now = new Date();
   const existing = docs[id];
 
   const newDoc: Document = {
     id,
-    title: existing?.title ?? undefined,
+    title,
     snapshot,
     createdAt: existing?.createdAt ? new Date(existing.createdAt) : now,
     updatedAt: now,
@@ -48,4 +52,10 @@ export function saveDocument(id: string, snapshot: TLEditorSnapshot): Document {
   writeDocuments(docs);
 
   return newDoc;
+}
+
+export function deleteDocument(id: string): void {
+  const docs = readDocuments();
+  delete docs[id];
+  writeDocuments(docs);
 }

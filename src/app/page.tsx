@@ -1,24 +1,13 @@
-import Link from "next/link";
-import { serverClient } from "@/server/serverClient";
+import { CreateButton } from "@/components/CreateButton";
 
 export default async function HomePage() {
-  const documents = await serverClient.getAll();
-
   return (
-    <main className="p-8">
-      <h1 className="text-2xl font-bold mb-4">Mis documentos</h1>
-      <ul className="space-y-2">
-        {documents.map((doc) => (
-          <li key={doc.id}>
-            <Link
-              href={`/editor/${doc.id}`}
-              className="text-blue-600 hover:underline"
-            >
-              {doc.title}
-            </Link>
-          </li>
-        ))}
-      </ul>
-    </main>
+    <div className="w-full h-full flex flex-col items-center justify-center flex-1 text-center gap-6">
+      <h1 className="text-3xl font-bold">Welcome 👋</h1>
+      <p className="text-muted-foreground">
+        Start by creating a new document or open one from the sidebar.
+      </p>
+      <CreateButton />
+    </div>
   );
 }
