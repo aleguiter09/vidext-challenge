@@ -3,7 +3,6 @@ import { generateText } from "ai";
 import { publicProcedure, router } from "./trpc";
 import { DocumentInputSchema, DocumentSchema } from "@/schemas/document";
 import { deleteDocument, getAll, getDocument, saveDocument } from "./fileStore";
-import z from "zod";
 
 const openai = createOpenAI({
   apiKey: process.env.OPENAI_API_KEY,
