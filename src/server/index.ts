@@ -12,7 +12,7 @@ export const appRouter = router({
   getDocument: publicProcedure
     .input(DocumentInputSchema.pick({ id: true }))
     .query(async ({ input }) => {
-      const doc = getDocument(input.id);
+      const doc = await getDocument(input.id);
       if (!doc) return { id: input.id, snapshot: undefined, title: "" };
       return { id: input.id, snapshot: doc.snapshot, title: doc.title };
     }),
@@ -22,8 +22,7 @@ export const appRouter = router({
     .mutation(async ({ input }) => {
       if (!input.snapshot || !input.title) return;
 
-      const saved = saveDocument(input.id, input.snapshot, input.title);
-      return { id: input.id, snapshot: saved, title: input.title };
+      await saveDocument(input.id, input.snapshot, input.title);
     }),
 
   getAll: publicProcedure.query(async () => {
@@ -33,7 +32,7 @@ export const appRouter = router({
   deleteDocument: publicProcedure
     .input(DocumentInputSchema.pick({ id: true }))
     .mutation(async ({ input }) => {
-      deleteDocument(input.id);
+      await deleteDocument(input.id);
     }),
 
   suggestTitle: publicProcedure

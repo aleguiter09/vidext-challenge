@@ -19,6 +19,7 @@ export function Toolbar({
   const saveMutation = trpc.saveDocument.useMutation({
     onSuccess: () => {
       utils.getAll.invalidate();
+      utils.getDocument.invalidate({ id });
       toast.success("Changes saved successfully");
     },
     onError: () => toast.error("Failed to save changes"),

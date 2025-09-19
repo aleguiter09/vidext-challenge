@@ -20,7 +20,8 @@ Project deployed on **Vercel**: [https://vidext-challenge-ag.vercel.app/](https:
 - [shadcn](https://ui.shadcn.com/)
 - [tldraw](https://tldraw.dev/)
 - [Vercel](https://vercel.com/)
-- Simple persistence simulated with `fileStore` (local JSON).
+- [Upstash Redis](https://vercel.com/marketplace/upstash-redis)
+- Simple persistence simulated locally with `fileStore` (local JSON).
 
 ## ⚙️ Local setup
 
@@ -104,6 +105,24 @@ Integrated with OpenAI API (via `openai` SDK) to suggest document titles based o
 - Click **"✨ Suggest Title"** in the editor toolbar.
 - The current canvas snapshot is sent to `gpt-4o-mini`.
 - The model returns a short, descriptive title suggestion.
+
+## Persistence
+
+- **Local development / tests**  
+  Documents are stored in `data/documents.json`.  
+  This requires no external setup, so the app works out-of-the-box with no connection to upstash.
+
+- **Production (Vercel deploy)**  
+  Since Vercel functions have a read-only filesystem, the app uses  
+  [Upstash Redis](https://vercel.com/marketplace/upstash-redis) (via the Vercel Marketplace) for persistence.  
+  The deployed version is already configured — no setup is required to test it online.
+
+### Design decisions
+
+- **Hybrid store:** JSON file locally for simplicity, Redis in production for persistence.
+- **Automatic timestamps:** documents maintain both `createdAt` and `updatedAt`.
+- **Sorted index:** Redis keeps documents ordered by `updatedAt` for quick retrieval.
+- **Zero friction for reviewers:** the repo runs with JSON storage locally, while the live deploy persists data via Redis automatically.
 
 ## 🧪 Tests & CI/CD
 

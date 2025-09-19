@@ -27,6 +27,7 @@ vi.mock("@/providers/TRPCProvider", () => ({
   trpc: {
     useUtils: () => ({
       getAll: { invalidate },
+      getDocument: { invalidate },
     }),
     saveDocument: {
       useMutation: vi.fn().mockImplementation((opts) => ({
