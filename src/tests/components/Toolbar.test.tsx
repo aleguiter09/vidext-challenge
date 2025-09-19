@@ -1,6 +1,7 @@
 import { render, screen, fireEvent } from "@testing-library/react";
 import { describe, expect, it, vi } from "vitest";
 import { Toolbar } from "@/components/Toolbar";
+import { getDocument } from "@/server/fileStore";
 
 const mockEditor = { store: {} };
 
@@ -27,6 +28,7 @@ vi.mock("@/providers/TRPCProvider", () => ({
   trpc: {
     useUtils: () => ({
       getAll: { invalidate },
+      getDocument: { invalidate },
     }),
     saveDocument: {
       useMutation: vi.fn().mockImplementation((opts) => ({
