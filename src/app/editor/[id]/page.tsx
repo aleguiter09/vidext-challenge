@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 import { Canva } from "@/components/Canva";
 import { serverClient } from "@/server/serverClient";
 
