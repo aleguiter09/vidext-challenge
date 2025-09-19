@@ -1,5 +1,3 @@
-import "server-only";
-
 import { type Document, DocumentSchema } from "@/schemas/document";
 import type { TLEditorSnapshot } from "tldraw";
 import fs from "fs";
