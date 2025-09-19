@@ -1,7 +1,4 @@
-export const dynamic = "force-dynamic";
-
-import { Canva } from "@/components/Canva";
-import { serverClient } from "@/server/serverClient";
+import { EditorClient } from "@/components/EditorClient";
 
 export default async function EditorPage({
   params,
@@ -9,7 +6,5 @@ export default async function EditorPage({
   params: { id: string };
 }>) {
   const { id } = await params;
-  const data = await serverClient.getDocument({ id });
-
-  return <Canva id={id} snapshot={data.snapshot} title={data.title} />;
+  return <EditorClient id={id} />;
 }
